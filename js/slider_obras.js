@@ -15,11 +15,23 @@ const photosWorks = [
 ]
 
 const d = document;
-
 const containerPhotos = d.querySelector("#photosWorks");
+const containerPhotos2 = d.querySelector("#photosShows");
+
 containerPhotos.innerHTML = photosWorks.map((photo) => {
     return `<img src="${photo}" alt="photo" class="photo">`;
 });
+
+// Add event click to each photo
+const photos = d.querySelectorAll(".photo");
+photos.forEach((photo) => {
+    photo.addEventListener("click", (e) => {
+        console.log(e.target.src);
+
+        containerPhotos2.innerHTML = `<img src="${e.target.src}" alt="photo" class="photo">`;
+    })
+});
+
 
 
 
