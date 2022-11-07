@@ -76,6 +76,13 @@ li{
   text-transform: uppercase;
 }
 
+.pie{
+  text-align: center;
+  color: var(--cl_white);
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
 /* * {
   margin: 0;
   padding: 0;
