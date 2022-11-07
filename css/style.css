@@ -112,7 +112,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vh;
+  /*width: 100vh;*/
+  width: 800px;
   background-color: #000;
   vertical-align: baseline;
 }
