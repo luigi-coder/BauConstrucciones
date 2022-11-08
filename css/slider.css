@@ -74,12 +74,12 @@
   color: white;
 }
 
-.row {
+.imgClick {
   display: flex;
   justify-content: center;
 }
 
-.row:after {
+.imgClick:after {
   content: "";
   display: table;
   clear: both;
@@ -100,3 +100,6 @@
 .demo:hover {
   opacity: 1;
 }
+
+
+
