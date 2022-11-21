@@ -88,8 +88,8 @@ img{
 .row
 .col-md-4
 img{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin-top: 50px;
 }
 
@@ -112,6 +112,18 @@ li{
   list-style: none;
   color: var(--cl_white);
   text-transform: uppercase;
+}
+
+.footer
+.container
+.row
+.col-md-8
+ul 
+li
+i{
+  color: #8e9296;
+  font-size: 25px;
+  margin-right: 8px;
 }
 
 .pie{
@@ -180,7 +192,6 @@ img {
   .mySlides img {
     width: 100%;
     max-height: 100vh;
-    background-color: blue;
   }
 }
 /* @media only screen and (max-width:824px){
@@ -254,6 +265,7 @@ img {
   }
   .pie {
     margin-top: 0;
+    font-size: small;
   }
   /* .card-deck .card{
    flex:  0 0 100%;
@@ -278,7 +290,6 @@ img {
 @media only screen and (max-width: 700px){
   .mainTitle {
     font-size: 2rem;
-    background-color: red;
   }
 }
 
@@ -300,7 +311,6 @@ img {
 @media only screen and (max-width:475px){
   .mainTitle {
     font-size: 1.5rem;
-    background-color: blue;
   }
   .nav .nav-item .nav-link{
     color: var(--cl_black);
