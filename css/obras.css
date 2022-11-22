@@ -98,3 +98,208 @@
     }
 
 }
+
+@media only screen and (max-width:800px){
+
+    .content-all{
+        width: 280px;
+    }
+
+    .content-carrousel figure{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .content-carrousel figure:nth-child(1){
+        transform: rotateY(0deg) 
+        translateZ(280px)
+    }
+    .content-carrousel figure:nth-child(2){
+        transform: rotateY(90deg) 
+        translateZ(280px)
+    }
+    .content-carrousel figure:nth-child(3){
+        transform: rotateY(180deg) 
+        translateZ(280px)
+    }
+
+    .content-carrousel figure:nth-child(4){
+        transform: rotateY(270deg) 
+        translateZ(280px)
+    }
+
+    .content-carrousel figure:nth-child(5){
+        transform: rotateY(360deg) 
+        translateZ(200px)
+    }
+    .coverLetters{
+        margin-top: 650px;
+    }
+
+}
+
+@media only screen and (max-width:750px){
+    
+        .content-all{
+            width: 260px;
+        }
+    
+        .content-carrousel figure{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    
+        .content-carrousel figure:nth-child(1){
+            transform: rotateY(0deg) 
+            translateZ(260px)
+        }
+        .content-carrousel figure:nth-child(2){
+            transform: rotateY(90deg) 
+            translateZ(260px)
+        }
+        .content-carrousel figure:nth-child(3){
+            transform: rotateY(180deg) 
+            translateZ(260px)
+        }
+    
+        .content-carrousel figure:nth-child(4){
+            transform: rotateY(270deg) 
+            translateZ(260px)
+        }
+    
+        .content-carrousel figure:nth-child(5){
+            transform: rotateY(360deg) 
+            translateZ(260px)
+        }
+    
+}
+
+@media only screen and (max-width:700px){
+    
+    .content-all{
+        width: 240px;
+    }
+
+    .content-carrousel figure{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .content-carrousel figure:nth-child(1){
+        transform: rotateY(0deg) 
+        translateZ(240px)
+    }
+    .content-carrousel figure:nth-child(2){
+        transform: rotateY(90deg) 
+        translateZ(240px)
+    }
+    .content-carrousel figure:nth-child(3){
+        transform: rotateY(180deg) 
+        translateZ(240px)
+    }
+
+    .content-carrousel figure:nth-child(4){
+        transform: rotateY(270deg) 
+        translateZ(240px)
+    }
+
+    .content-carrousel figure:nth-child(5){
+        transform: rotateY(360deg) 
+        translateZ(240px)
+    }
+
+}
+
+
+
+@media only screen and (max-width:650px){
+    
+    .content-all{
+        width: 220px;
+    }
+
+    .content-carrousel figure{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .content-carrousel figure:nth-child(1){
+        transform: rotateY(0deg) 
+        translateZ(220px)
+    }
+    .content-carrousel figure:nth-child(2){
+        transform: rotateY(90deg) 
+        translateZ(220px)
+    }
+    .content-carrousel figure:nth-child(3){
+        transform: rotateY(180deg) 
+        translateZ(220px)
+    }
+
+    .content-carrousel figure:nth-child(4){
+        transform: rotateY(270deg) 
+        translateZ(220px)
+    }
+
+    .content-carrousel figure:nth-child(5){
+        transform: rotateY(360deg) 
+        translateZ(220px)
+    }
+
+}
+@media only screen and (max-width:388px){
+    .imgClick
+    .columna{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    
+    .content-all{
+        width: 180px;
+    }
+
+    .content-carrousel figure{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .content-carrousel figure:nth-child(1){
+        transform: rotateY(0deg) 
+        translateZ(120px)
+    }
+    .content-carrousel figure:nth-child(2){
+        transform: rotateY(90deg) 
+        translateZ(120px)
+    }
+    .content-carrousel figure:nth-child(3){
+        transform: rotateY(180deg) 
+        translateZ(120px)
+    }
+
+    .content-carrousel figure:nth-child(4){
+        transform: rotateY(270deg) 
+        translateZ(120px)
+    }
+
+    .content-carrousel figure:nth-child(5){
+        transform: rotateY(360deg) 
+        translateZ(120px)
+    }
+
+    .coverLetters{
+        margin-top: 500px;
+    }
+    
+
+}
