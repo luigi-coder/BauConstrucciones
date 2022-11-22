@@ -1,35 +1,34 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+/* const photosWorks = [
+    "assets/img/galeria/L102-00.jpg",
+    "assets/img/galeria/L152-00.jpg",
+    "assets/img/galeria/L170-00.jpg",
+    "assets/img/galeria/L-219.jpg",
+    "assets/img/galeria/L134-00.jpg",
+    "assets/img/galeria/L-147.jpg",
+    "assets/img/galeria/RG.jpg",
+    "assets/img/galeria/Gauna00.jpg",
+    "assets/img/galeria/VZ-00.jpg",
+    "assets/img/galeria/L-160.jpg",
+    "assets/img/galeria/Fra.png",
+    "assets/img/galeria/Casa10.png",
+    "assets/img/galeria/salmon00.jpg",
+]
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+const d = document;
+const containerPhotos = d.querySelector("#photosWorks");
+const containerPhotos2 = d.querySelector("#photosShows");
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
-
-document.addEventListener('DOMContentLoaded', ()=> {
-
-  
-
+containerPhotos.innerHTML = photosWorks.map((photo) => {
+    return `<img src="${photo}" alt="photo" class="photo">`;
 });
+
+// Add event click to each photo
+const photos = d.querySelectorAll(".photo");
+photos.forEach((photo) => {
+    photo.addEventListener("click", (e) => {
+        console.log(e.target.src);
+
+        containerPhotos2.innerHTML = `<img src="${e.target.src}" alt="photo" class="photo">`;
+    })
+});
+ */

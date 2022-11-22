@@ -1,4 +1,4 @@
-const photosWorks = [
+const slideImg = [
     "assets/img/galeria/L102-00.jpg",
     "assets/img/galeria/L152-00.jpg",
     "assets/img/galeria/L170-00.jpg",
@@ -12,31 +12,77 @@ const photosWorks = [
     "assets/img/galeria/Fra.png",
     "assets/img/galeria/Casa10.png",
     "assets/img/galeria/salmon00.jpg",
-]
-
-const d = document;
-const containerPhotos = d.querySelector("#photosWorks");
-const containerPhotos2 = d.querySelector("#photosShows");
-
-containerPhotos.innerHTML = photosWorks.map((photo) => {
-    return `<img src="${photo}" alt="photo" class="photo">`;
-});
-
-// Add event click to each photo
-const photos = d.querySelectorAll(".photo");
-photos.forEach((photo) => {
-    photo.addEventListener("click", (e) => {
-        console.log(e.target.src);
-
-        containerPhotos2.innerHTML = `<img src="${e.target.src}" alt="photo" class="photo">`;
-    })
-});
+  ]
+  
+  const slideShow = document.querySelector('#slideShow');
+  const imgClicks = document.querySelector('.imgClick');
+  const columna = document.querySelector('.columna');
 
 
 
+  slideImg.forEach((img) => {
+    const div = document.createElement('div');
+    div.classList.add('mySlides');
+  
+    div.innerHTML = `
+        <div class="img-container">
+          <img src="${img}">
+        </div>`
+    // insertar como primer hijo
+    slideShow.insertBefore(div, slideShow.firstChild);
+    
+  });
+  
+  slideImg.forEach((img, index) => {
 
-/* const img = document.querySelector('.img01');
+    const imagen = document.createElement('img');
+    imagen.src = img;
+    imagen.classList.add(`img${index}`);
+    
+    columna.appendChild(imagen);
 
-img.addEventListener('click', ()=>{
-    console.log('click en la imagen');
-}) */
+    imagen.addEventListener('click', (e) => {
+        showSlides(slideIndex = index);
+    });
+  
+  });
+  
+  
+  let slideIndex = 0;
+  showSlides(slideIndex);
+  
+  const prev = document.querySelector('.prev');
+  prev.addEventListener('click', () => {
+    showSlides(slideIndex += -1);
+  });
+  const next = document.querySelector('.next');
+  next.addEventListener('click', () => {
+    showSlides(slideIndex += 1);
+  });
+  
+  
+  function showSlides(n) {
+  
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+  
+    
+    slides = [...slides].reverse();
+  
+    if (n >= slides.length) {slideIndex = 0}
+    if (n < 0) {slideIndex = slides.length - 1}
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+  
+    slides[slideIndex].style.display = "block";
+  
+  }
+  
+  
+  
+  
+  
