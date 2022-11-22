@@ -5,9 +5,10 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
   display: none;
-}
+} */
+
 
 .mySlides img {
   /*width: 100%;*/
@@ -23,17 +24,12 @@
   align-items: center;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 35%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -77,6 +73,22 @@
 .imgClick {
   display: flex;
   justify-content: center;
+
+}
+.imgClick
+.columna{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.imgClick
+.columna
+img {
+  width: 150px;
+  cursor: pointer;
 }
 
 .imgClick:after {

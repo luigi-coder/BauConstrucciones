@@ -1,0 +1,100 @@
+.content-all {
+    width: 400px;
+    perspective: 1000px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrousel figure{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) 
+    translateZ(400px)
+}
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(90deg) 
+    translateZ(400px)
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(180deg) 
+    translateZ(400px)
+}
+
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(270deg) 
+    translateZ(400px)
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(360deg) 
+    translateZ(400px)
+}
+
+.content-carrousel img{
+    width: 100%;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+@keyframes rotar{
+    from {
+        transform: rotateY(0deg);
+    }to {
+        transform: rotateY(360deg);
+    }
+}
+    
+
+@media only screen and (max-width:1200px){
+    .content-all{
+        width: 300px;
+    }
+
+    .content-carrousel figure{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .content-carrousel figure:nth-child(1){
+        transform: rotateY(0deg) 
+        translateZ(300px)
+    }
+    .content-carrousel figure:nth-child(2){
+        transform: rotateY(90deg) 
+        translateZ(300px)
+    }
+    .content-carrousel figure:nth-child(3){
+        transform: rotateY(180deg) 
+        translateZ(300px)
+    }
+
+    .content-carrousel figure:nth-child(4){
+        transform: rotateY(270deg) 
+        translateZ(300px)
+    }
+
+    .content-carrousel figure:nth-child(5){
+        transform: rotateY(360deg) 
+        translateZ(300px)
+    }
+
+}

@@ -13,6 +13,10 @@
 
 body {
   font-family: 'EngraversGothicBT';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.677)), url(../assets/img/fondojpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 :root{
   --cl_white: #fff;
@@ -45,12 +49,15 @@ img{
 }
 
 .nav .nav-item .nav-link{
-  color: var(--cl_black);
+  color: var(--cl_white);
+  cursor: pointer;
+  font-weight: 600;
 } 
+
 
 /* Cartas de presentacion home*/
 .coverLetters{
-  margin-top: 100px;
+  margin-top: 800px;
 }
 .coverLetters h1 {
   text-transform: uppercase;
@@ -59,6 +66,7 @@ img{
   /* font-family: 'Bebas Neue', cursive; */
   letter-spacing: 0.2rem;
   margin-bottom: 50px;
+  background-color: #fff;
 }
 .coverLetters 
 .card-deck 
@@ -68,6 +76,9 @@ img{
   text-align: justify;
   font-size: 1.2rem;
 }
+
+/* OBRAS */
+
 /*Footer*/
 .footer{
   margin-top: 100px;
@@ -112,6 +123,7 @@ li{
   list-style: none;
   color: var(--cl_white);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer
@@ -223,6 +235,7 @@ img {
     background-color: blue;
   }
 } */
+
 @media only screen and (max-width: 992px) {
   
   .card-deck .card{
@@ -230,7 +243,13 @@ img {
   }
 }
 @media only screen and (max-width:820px) {
-  .imgClick,
+  #obrasShow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .imgClick .columna img:hover {
+    width: 100%;
+  }
   .caption-container{
     display: none;
   }
@@ -238,6 +257,13 @@ img {
     margin-top: -60px;
     font-size: 2rem;
   }
+  .mySlides img {
+    display: none;
+  }
+  .prev, .next {
+    display: none;
+  }
+  
 }
 @media only screen and (max-width: 768px){
   .card-deck{
@@ -333,6 +359,17 @@ img {
     flex-direction: column;
 
   }
+}
+
+
+
+/*ESTILOS PARA EL JS*/
+.hidden {
+  display: none;
+}
+
+.nohidden {
+  display: block;
 }
 
 
