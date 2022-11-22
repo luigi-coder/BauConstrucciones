@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/obras.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,147 +22,82 @@
         
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href="obras.html">OBRAS</a>
+                <a id="home" class="nav-link">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                <a id="obras" class="nav-link">OBRAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                <a id="nosotros" class="nav-link">NOSOTROS</a>
             </li>
         </ul>
     </nav>
     <section class="home">
         <!--Inicio de la Home-->
-        <section class="containerSlide">
-            <div class="mySlides">
-                <div class="img-container">
-                    <img src="assets/img/carrousel/imgSlider01.jpg">
+
+        <div class="content-all">
+            <div class="content-carrousel">
+                <figure><img src="assets/img/carrousel/imgSlider01.jpg" alt=""></figure>
+                <figure><img src="assets/img/carrousel/imgSlider02.jpg" alt=""></figure>
+                <figure><img src="assets/img/carrousel/imgSlider03.jpg" alt=""></figure>
+                <figure><img src="assets/img/carrousel/imgSlider04.jpg" alt=""></figure>
+            </div>
+        </div>
+        <!--Final de la Home-->
+    </section>
+     <!--Inicio cartas de presentacion-->
+     <section class="propuestas container coverLetters">
+        <h1>nuestras propuestas</h1>
+        <div class="card-deck">
+            <div class="card">
+                <img src="assets/img/home/estructura.png" class="card-img-top" alt="hormigon armado">
+                <div class="card-body">
+                  <h5 class="card-title">ESTRUCTURAS DE HORMIGON ARMADO.</h5>
+                  <p class="card-text">Somos especialistas en ejecucion de estructuras de hormigon armado de gran envergadura.</p>
                 </div>
             </div>
-    
-            <div class="mySlides">
-                <div class="img-container">
-                    <img src="assets/img/carrousel/imgSlider02.jpg">
+            <div class="card">
+                <img src="assets/img/home/demolicion.png" class="card-img-top" alt="demoliciones">
+                <div class="card-body">
+                  <h5 class="card-title">DEMOLICIONES.</h5>
+                  <p class="card-text">Actualmente contamos con todos los equipos, herramientas y personal idoneo para encarar todo tipo de demoliciones.</p>
                 </div>
             </div>
-    
-            <div class="mySlides">
-                <div class="img-container">
-                    <img src="assets/img/carrousel/imgSlider03.jpg">
+            <div class="card">
+                <img src="assets/img/home/gruas.png" class="card-img-top" alt="objetivo">
+                <div class="card-body">
+                  <h5 class="card-title">OBJETIVO.</h5>
+                  <p class="card-text">Nuestro principal objetivo es brindarle a cada cliente la solucion constructiva a su medida.</p>
                 </div>
             </div>
-                
-            <div class="mySlides">
-                <div class="img-container">
-                    <img src="assets/img/carrousel/imgSlider04.jpg">
-                </div>
-            </div>
-    
+        </div>
+    </section>
+    <!--Final cartas de presentacion-->
+    <!--Seccion incio Obras-->
+    <section id="obrasShow" class="obras hidden">
+
+        <section class="containerSlide" id="slideShow">
             
+            <!--Aca va el slider desde js-->
                 
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="prev" >❮</a>
+            <a class="next" >❯</a>
     
             <div class="caption-container">
                 <p id="caption"></p>
             </div>
     
             <div class="imgClick">
-                <div class="column">
-                <img class="demo cursor" src="assets/img/carrousel/imgSlider01.jpg" style="width:100%" onclick="currentSlide(1)" alt="Titulo de la imagen 01">
+                <!--img chicas desde js-->
+                <div class="columna">
+                    
                 </div>
-                <div class="column">
-                <img class="demo cursor" src="assets/img/carrousel/imgSlider02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Titulo de la imagen 02">
-                </div>
-                <div class="column">
-                <img class="demo cursor" src="assets/img/carrousel/imgSlider03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Titulo de la imagen 03">
-                </div>
-                <div class="column">
-                <img class="demo cursor" src="assets/img/carrousel/imgSlider04.jpg" style="width:100%" onclick="currentSlide(4)" alt="Titulo de la imagen 04">
-                </div>    
             </div>
         </section>
-        <!--Final de la Home-->
-        <!--Inicio cartas de presentacion-->
-        <section class="container coverLetters">
-            <h1>nuestras propuestas</h1>
-            <div class="card-deck">
-                <div class="card">
-                    <img src="assets/img/home/estructura.png" class="card-img-top" alt="hormigon armado">
-                    <div class="card-body">
-                      <h5 class="card-title">ESTRUCTURAS DE HORMIGON ARMADO.</h5>
-                      <p class="card-text">Somos especialistas en ejecucion de estructuras de hormigon armado de gran envergadura.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/home/demolicion.png" class="card-img-top" alt="demoliciones">
-                    <div class="card-body">
-                      <h5 class="card-title">DEMOLICIONES.</h5>
-                      <p class="card-text">Actualmente contamos con todos los equipos, herramientas y personal idoneo para encarar todo tipo de demoliciones.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/home/gruas.png" class="card-img-top" alt="objetivo">
-                    <div class="card-body">
-                      <h5 class="card-title">OBJETIVO.</h5>
-                      <p class="card-text">Nuestro principal objetivo es brindarle a cada cliente la solucion constructiva a su medida.</p>
-                    </div>
-                </div>
-                <!-- <div class="card col-md-12">
-                  <img src="assets/img/home/estructura.png" class="card-img-top" alt="hormigon armado">
-                  <div class="card-body">
-                    <h5 class="card-title">ESTRUCTURAS DE HORMIGON ARMADO.</h5>
-                    <p class="card-text">Somos especialistas en ejecucion de estructuras de hormigon armado de gran envergadura.</p>
-                    
-                  </div>
-                </div>
-                <div class="card col-xl-12">
-                  <img src="assets/img/home/demolicion.png" class="card-img-top" alt="demoliciones">
-                  <div class="card-body">
-                    <h5 class="card-title">DEMOLICIONES.</h5>
-                    <p class="card-text">Actualmente contamos con todos los equipos, herramientas y personal idoneo para encarar todo tipo de demoliciones.</p>
-                    
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/home/gruas.png" class="card-img-top" alt="objetivo">
-                  <div class="card-body">
-                    <h5 class="card-title">OBJETIVO.</h5>
-                    <p class="card-text">Nuestro principal objetivo es brindarle a cada cliente la solucion constructiva a su medida.</p>
-                    
-                  </div>
-                </div>
-              </div> -->
-        </section>
-        <!--Final cartas de presentacion-->
-    </section>
-    <!--Seccion incio Obras-->
-    <section class="obras" hidden>
-        <div class="row">
-            <div id="photosWorks" class="col-md-3 photosWorks">
-                <!-- <img class="img01" src="img/galeria/L102-00.jpg" alt="">
-                <img class="img02" src="img/galeria/L152-00.jpg" alt="">
-                <img class="img03" src="img/galeria/L170-00.jpg" alt="">
-                <img class="img04" src="img/galeria/L-219.jpg" alt="">
-                <img class="img05" src="img/galeria/L134-00.jpg" alt="">
-                <img class="img06" src="img/galeria/L-147.jpg" alt="">
-                <img class="img07" src="img/galeria/RG.jpg" alt="">
-                <img class="img08" src="img/galeria/Gauna00.jpg" alt="">
-                <img class="img09" src="img/galeria/VZ-00.jpg" alt="">
-                <img class="img10" src="img/galeria/L-160.jpg" alt="">
-                <img class="img11" src="img/galeria/Fra.png" alt="">
-                <img class="img12" src="img/galeria/Casa10.png" alt="">
-                <img class="img13" src="img/galeria/salmon00.jpg" alt=""> -->
-            </div>
-            <div id="photosShows" class="col-md-9 photoShows">
-                <img src="assets/img/galeria/L102-00.jpg" alt="">
-            </div>
-        </div>
     </section>
     <!--Final Obras-->
     <!--Seccion incio contacto-->
-    <section class="contacto" hidden>
+    <!-- <section class="contacto" hidden>
         <div class="container">
             <div class="infoContact">
                 <h3>Buenos Aires, Argentina</h3>
@@ -169,35 +105,35 @@
                 <h3>(+54 9) 11-3491-2077</h3>
             </div>
             <div class="row">
-                <div class="col-md-6 mb-3">
+                <div class="div  mb-3">
                     <label for="nombre">
                         <span class="text-muted"></span>
                     </label>
                     <input type="text" class="form-control" id="nombre" placeholder="NOMBRE" required>
                 </div>
     
-                <div class="col-md-6 mb-3">
+                <div class="div  mb-3">
                     <label for="apellido">
                         <span class="text-muted"></span>
                     </label>
                     <input type="text" class="form-control" id="apellido" placeholder="APELLIDO" required>
                 </div>
     
-                <div class="col-md-6 mb-3">
+                <div class="div  mb-3">
                     <label for="telefono">
                         <span class="text-muted"></span>
                     </label>
                     <input type="number" class="form-control" id="telefono" placeholder="TELEFONO" required>
                 </div>
 
-                <div class="col-md-6 mb-3">
+                <div class="div  mb-3">
                     <label for="email">
                         <span class="text-muted"></span>
                     </label>
                     <input type="email" class="form-control" id="email" placeholder="E-MAIL" required>
                 </div>   
             
-                <div class="form-group col-md-12 mb-3">
+                <div class="form-group div 2 mb-3">
                     <label for="exampleFormControlTextarea1"></label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MENSAJE" rows="10"></textarea>
                     <br>
@@ -207,7 +143,7 @@
                 </div>      
             </div>  
         </div>
-    </section>
+    </section> -->
     <!--final contacto-->
     <!--Inicio footer-->
     <section class="footer">
@@ -257,7 +193,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/slider_home.js"></script>
     <script src="js/slider_obras.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
 
