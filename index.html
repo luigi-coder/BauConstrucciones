@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
@@ -33,38 +33,40 @@
             </li>
         </ul>
     </nav>
-    <section class="home">
+    <section class="home container-fuid">
         <!--Inicio de la Home-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        </div>
 
-        <div class="content-all">
+        <!-- <div class="content-all">
             <div class="content-carrousel">
                 <figure><img src="assets/img/carrousel/imgSlider01.jpg" alt=""></figure>
                 <figure><img src="assets/img/carrousel/imgSlider02.jpg" alt=""></figure>
                 <figure><img src="assets/img/carrousel/imgSlider03.jpg" alt=""></figure>
                 <figure><img src="assets/img/carrousel/imgSlider04.jpg" alt=""></figure>
             </div>
-        </div>
+        </div> -->
         <!--Final de la Home-->
     </section>
      <!--Inicio cartas de presentacion-->
-     <section class="propuestas container coverLetters">
+    <section class="nosotros container coverLetters hidden">
         <h1>nuestras propuestas</h1>
         <div class="card-deck">
-            <div class="card">
+            <div class="card" style="width: 18rem;">
                 <img src="assets/img/home/estructura.png" class="card-img-top" alt="hormigon armado">
                 <div class="card-body">
                   <h5 class="card-title">ESTRUCTURAS DE HORMIGON ARMADO.</h5>
                   <p class="card-text">Somos especialistas en ejecucion de estructuras de hormigon armado de gran envergadura.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" style="width: 18rem;">
                 <img src="assets/img/home/demolicion.png" class="card-img-top" alt="demoliciones">
                 <div class="card-body">
                   <h5 class="card-title">DEMOLICIONES.</h5>
                   <p class="card-text">Actualmente contamos con todos los equipos, herramientas y personal idoneo para encarar todo tipo de demoliciones.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" style="width: 18rem;">
                 <img src="assets/img/home/gruas.png" class="card-img-top" alt="objetivo">
                 <div class="card-body">
                   <h5 class="card-title">OBJETIVO.</h5>
@@ -77,127 +79,81 @@
     <!--Seccion incio Obras-->
     <section id="obrasShow" class="obras hidden">
         
-        <h1>Nuestras Obras</h1>
+        <h1 class="text-dark">Nuestras Obras</h1>
 
-        <section class="containerSlide" id="slideShow">
+        <div class="content-all">
+            <div class="content-carrousel">
+                <figure><img src="assets/img/carrousel/imgSlider01.jpg" alt=""></figure>
+                <figure><img src="assets/img/carrousel/imgSlider02.jpg" alt=""></figure>
+                <figure><img src="assets/img/carrousel/imgSlider03.jpg" alt=""></figure>
+                <figure><img src="assets/img/carrousel/imgSlider04.jpg" alt=""></figure>
+            </div>
+        </div>
+
+        <!-- <section class="containerSlide" id="slideShow">
 
             
-            <!--Aca va el slider desde js-->
+            Aca va el slider desde js
                 
-            <a class="prev" >❮</a>
-            <a class="next" >❯</a>
+            <a class="prev bg-dark" >❮</a>
+            <a class="next bg-dark" >❯</a>
     
             <div class="caption-container">
                 <p id="caption"></p>
             </div>
     
             <div class="imgClick">
-                <!--img chicas desde js-->
+                img chicas desde js
                 <div class="columna">
                     
                 </div>
             </div>
-        </section>
+        </section> -->
     </section>
     <!--Final Obras-->
-    <!--Seccion incio contacto-->
-    <!-- <section class="contacto" hidden>
-        <div class="container">
-            <div class="infoContact">
-                <h3>Buenos Aires, Argentina</h3>
-                <h3>Kutz.construcciones@gmail.com</h3>
-                <h3>(+54 9) 11-3491-2077</h3>
-            </div>
-            <div class="row">
-                <div class="div  mb-3">
-                    <label for="nombre">
-                        <span class="text-muted"></span>
-                    </label>
-                    <input type="text" class="form-control" id="nombre" placeholder="NOMBRE" required>
-                </div>
-    
-                <div class="div  mb-3">
-                    <label for="apellido">
-                        <span class="text-muted"></span>
-                    </label>
-                    <input type="text" class="form-control" id="apellido" placeholder="APELLIDO" required>
-                </div>
-    
-                <div class="div  mb-3">
-                    <label for="telefono">
-                        <span class="text-muted"></span>
-                    </label>
-                    <input type="number" class="form-control" id="telefono" placeholder="TELEFONO" required>
-                </div>
 
-                <div class="div  mb-3">
-                    <label for="email">
-                        <span class="text-muted"></span>
-                    </label>
-                    <input type="email" class="form-control" id="email" placeholder="E-MAIL" required>
-                </div>   
-            
-                <div class="form-group div 2 mb-3">
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MENSAJE" rows="10"></textarea>
-                    <br>
-                    <div class="boton">   
-                        <button type="button" class="btn btn-dark">ENVIAR</button>
-                    </div>
-                </div>      
-            </div>  
-        </div>
-    </section> -->
-    <!--final contacto-->
     <!--Inicio footer-->
     <section class="footer">
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 logoFooter">
-                        <img src="assets/img/logoBauTransparent.png" alt="">
+                    <div class="col-md-4">
+                        <ul>
+                            <li><i class="bi bi-buildings"></i>obras</li>
+                            <li><i class="bi bi-telephone"></i>telefono</li>
+                            
+                        </ul>
                     </div>
-                    <div class="col-md-8 row">
-                        <div class="col-md-6">
-                            <ul>
-                                <li><i class="bi bi-buildings"></i>obras</li>
-                                <li><i class="bi bi-people"></i>nosotros</li>
-                                <li><i class="bi bi-person-lines-fill"></i>contacto</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li><i class="bi bi-envelope-at"></i>email</li>
-                                <li><i class="bi bi-telephone"></i>telefono</li>
-                            </ul>
-                        </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><i class="bi bi-person-lines-fill"></i>contacto</li>
+                            <li><i class="bi bi-envelope-at"></i>email</li>
+                            
+                        </ul>
                     </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><i class="bi bi-people"></i>nosotros</li>
+                            <li><i class="bi bi-telephone"></i>instagram</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="pie bg-dark">
+            <div class="pie bg-dark mt-4 p-3">
                 <p class="pie1">© 2022 Kutz Construcciones. Todos los derechos reservados.</p>
                 <p class="pie2">Designed by LuigiCoder</p>
             </div>             
         </footer>  
     </section>
-    <section class="footer2">
-        <footer>
-            <div class="container text-center">
-                <img src="assets/img/logoBauTransparent.png" alt="">
-            </div>
-            <div class="pie bg-dark">
-                <p class="pie1">© 2022 Kutz Construcciones. Todos los derechos reservados.</p>
-                <p class="pie2">Designed by LuigiCoder</p>
-            </div>     
-        </footer>
-    </section>
-    <!--Final footer-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/slider_home.js"></script>
     <script src="js/slider_obras.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // cambiar la velocidad del slider de bootstrap js nativo
+        document.querySelector('.carousel').setAttribute('data-bs-interval', '2000');
+    </script>
 </body>
 </html>
 

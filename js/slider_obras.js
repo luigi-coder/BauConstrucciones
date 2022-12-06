@@ -1,4 +1,4 @@
-const slideImg = [
+/* const slideImg = [
     "assets/img/galeria/L102-00.jpg",
     "assets/img/galeria/L152-00.jpg",
     "assets/img/galeria/L170-00.jpg",
@@ -81,7 +81,7 @@ const slideImg = [
     slides[slideIndex].style.display = "block";
   
   }
-  
+   */
   
   
   
