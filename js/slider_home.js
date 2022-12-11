@@ -29,8 +29,6 @@ carouselInner.innerHTML = sliderHome.map((photo, index) => {
         <div class="carousel-item ${index === 0 ? 'active' : ''}">
             <img src="${photo}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
         </div>
     `
