@@ -140,6 +140,16 @@ li
 i{
   margin-right: 8px;
 }
+.footer
+.container
+.row
+.col-md-4
+ul 
+li
+a{
+  text-decoration: none;
+  color: var(--cl_white);
+}
 .pie{
   text-align: center;
   color: var(--cl_white);
@@ -567,5 +577,42 @@ img {
   display: block;
 }
 
+.obras1 a:hover {
+  filter: sepia(100%);
+  transform: scale(1.2);
+  transition: all .3s; }
 
 
+  .obras1 {
+    margin: 20px 20px; }
+  
+  .obras1 a:hover {
+    filter: sepia(100%);
+    transform: scale(1.2);
+    transition: all .3s; }
+  
+  .card {
+    overflow: hidden; }
+  
+  .gallery {
+    margin: 40px; }
+  
+  .volver {
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 20px; }
+  
+  .volver:hover {
+    background-color: black; }
+  
+  .nosotros {
+    position: relative; }
+  
+  .nosotrosLogo {
+    margin: 10px;
+    display: inline-block;
+    align-items: center; }
+  
+  .obrasGallery:hover {
+    transform: scale(1.2); }
+  

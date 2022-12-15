@@ -1,4 +1,4 @@
-const obras = document.querySelector('#obras');
+/* const obras = document.querySelector('#obras');
 obras.addEventListener('click', (e) => {
 
     const home = document.querySelector('.home');
@@ -43,4 +43,4 @@ nosotros.addEventListener('click', (e) => {
     propuestas.classList.add('no_hidden');
 
 
-});
+}); */

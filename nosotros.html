@@ -19,6 +19,7 @@
         <h2 class="mainTitle">B a u - construcciones</h2>
     </div>
     <nav class="navbar navbar-light">
+
         <a class="navbar-brand" href="#">
             <img src="assets/img/logoFinal.png" alt="logo">
         </a>
@@ -35,33 +36,42 @@
             </li>
         </ul>
     </nav>
-    <section class="home container-fuid">
-        <!--Inicio de la Home-->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        </div>
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/slider_home/1.jpg" class="d-block w-100" alt="...">
+    <section class="nosotros container coverLetters">
+        <h1>nuestras propuestas</h1>
+        <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/home/estructura.png" class="card-img-top" alt="hormigon armado">
+                <div class="card-body">
+                    <h5 class="card-title">ESTRUCTURAS DE HORMIGON ARMADO.</h5>
+                    <p class="card-text">Somos especialistas en ejecucion de estructuras de hormigon armado de gran
+                        envergadura.</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/img/slider_home/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/home/demolicion.png" class="card-img-top" alt="demoliciones">
+                <div class="card-body">
+                    <h5 class="card-title">DEMOLICIONES.</h5>
+                    <p class="card-text">Actualmente contamos con todos los equipos, herramientas y personal idoneo para
+                        encarar todo tipo de demoliciones.</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/img/slider_home/3.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/slider_home/4.HEIC" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/slider_home/5.HEIC" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/slider_home/6.HEIC" class="d-block w-100" alt="...">
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/home/gruas.png" class="card-img-top" alt="objetivo">
+                <div class="card-body">
+                    <h5 class="card-title">OBJETIVO.</h5>
+                    <p class="card-text">Nuestro principal objetivo es brindarle a cada cliente la solucion constructiva
+                        a su medida.</p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="text-center mt-5 mb-5">
+        <h3>Buenos Aires, Argentina</h3>
+        <h3><b>kutz.construcciones@gmail.com</b></h3>
+        <h3>(+54 9) 11-3491-2077</h3>
+        <h3>@bau.construcciones</h3>
     </section>
 
     <section class="footer">
@@ -115,13 +125,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="js/slider_home.js"></script>
-    <script src="js/slider_obras.js"></script>
+
     <script src="js/main.js"></script>
-    <script>
-        // cambiar la velocidad del slider de bootstrap js nativo
-        document.querySelector('.carousel').setAttribute('data-bs-interval', '2000');
-    </script>
+
 </body>
 
 </html>

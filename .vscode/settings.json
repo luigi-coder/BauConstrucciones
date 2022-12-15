@@ -7,7 +7,7 @@
     "terminal.integrated.fontSize": 16,
     "editor.minimap.enabled": false,
     "vscode-mysql.ressulTheme": "dark",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": -1,
     //"workbench.colorTheme": "Synthwave x Fluoromachine",
     "workbench.colorTheme": "SynthWave '84",
     "workbench.iconTheme": "sweet-vscode-icons",
