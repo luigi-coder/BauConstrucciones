@@ -626,3 +626,10 @@ img {
 .row {
   margin-right: -28px;
 }
+.somos h1 {
+  text-align: center;
+}
+.somos
+p {
+  text-align: justify;
+}

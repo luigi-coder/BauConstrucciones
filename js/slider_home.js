@@ -37,14 +37,3 @@ carousel.appendChild(carouselInner);
 
 
 
-// Señale el número de veces que el número 3 va seguido o precedido de un número par: 243158125310397842538710539489351
-
-const numbers = [2,4,3,1,5,8,1,2,5,3,1,0,3,9,7,8,4,2,5,3,8,7,1,0,5,3,9,4,8,9,3,5,1];
-let count = 0;
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] === 3 && (numbers[i - 1] % 2 === 0 || numbers[i + 1] % 2 === 0)) {
-        count++;
-    }
-}
-console.log(count);
-
