@@ -21,19 +21,19 @@ const sliderHome = [
     'assets/img/slider_home/20.jpg',
 ]
 
-const carousel = document.querySelector('#carouselExampleCaptions');
+const carousel = document.querySelector('#carouselExampleInterval');
 const carouselInner = document.createElement('div');
 carouselInner.classList.add('carousel-inner');
 carouselInner.innerHTML = sliderHome.map((photo, index) => {
     return `
         <div class="carousel-item ${index === 0 ? 'active' : ''}">
             <img src="${photo}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
         </div>
     `
 }).join('');
 carousel.appendChild(carouselInner);
+
+
 
 
 

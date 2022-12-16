@@ -53,6 +53,13 @@ img{
   cursor: pointer;
   font-weight: 600;
 } 
+.home
+#carouselExampleCaptions
+.carousel-inner{
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
 
 /*CARRUSEL HOME*/
 .home
@@ -64,9 +71,9 @@ img {
   height: 1000px;
   object-fit: cover;
 }
-#carouselExampleSlidesOnly{
+/* #carouselExampleSlidesOnly{
   display: none;
-}
+} */
 
 /* Cartas de presentacion home*/
 .coverLetters {
@@ -234,6 +241,15 @@ img {
     max-height: 100vh;
     background-color: blue;
   }
+  .home
+  #carouselExampleInterval
+  .carousel-inner
+  .carousel-item
+  img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+  }
   
 }
 
@@ -256,6 +272,15 @@ img {
     width: 100%;
     max-height: 100vh;
     background-color: blue;
+  }
+  .home
+  #carouselExampleInterval
+  .carousel-inner
+  .carousel-item
+  img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
   }
 }
 @media only screen and (max-width:820px) {
@@ -299,6 +324,15 @@ img {
     width: 100%;
     max-height: 100vh;
     background-color: blue;
+  }
+  .home
+  #carouselExampleInterval
+  .carousel-inner
+  .carousel-item
+  img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
   }
   
 }
@@ -391,6 +425,15 @@ img {
     max-height: 100vh;
     background-color: blue;
   }
+  .home
+  #carouselExampleInterval
+  .carousel-inner
+  .carousel-item
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
 }
 
 @media only screen and (max-width: 650px){ 
@@ -419,6 +462,15 @@ img {
   /* .card-deck .card{
    flex:  0 0 100%;
   } */
+  .home
+  #carouselExampleInterval
+  .carousel-inner
+  .carousel-item
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -443,6 +495,15 @@ img {
     width: 100%;
     max-height: 100vh;
     background-color: blue;
+  }
+  .home
+  #carouselExampleInterval
+  .carousel-inner
+  .carousel-item
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
   }
 }
 @media only screen and (max-width:475px){
@@ -478,12 +539,21 @@ img {
   ul{
     margin-left: -30px;
   }
-  #carouselExampleCaptions{
+  .home
+  #carouselExampleInterval
+  .carousel-inner
+  .carousel-item
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  /* #carouselExampleCaptions{
     display: none;
   }
   #carouselExampleSlidesOnly{
     display: block;
-  }
+  } */
   .home
   #carouselExampleSlidesOnly
   .carousel-inner
@@ -524,19 +594,19 @@ img {
   ul{
     margin-left: -30px;
   }
-  #carouselExampleCaptions{
+  /* #carouselExampleCaptions{
     display: none;
-  }
-  #carouselExampleSlidesOnly{
+  } */
+  /* #carouselExampleSlidesOnly{
     display: block;
-  }
+  } */
   .home
-  #carouselExampleSlidesOnly
+  #carouselExampleInterval
   .carousel-inner
   .carousel-item
   img {
     width: 100%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
   }
   /* .carousel-inner{
@@ -552,9 +622,9 @@ img {
     flex-direction: column;
 
   }
-  #carouselExampleSlidesOnly{
+  /* #carouselExampleSlidesOnly{
     display: block;
-  }
+  } */
   .home
   #carouselExampleSlidesOnly
   .carousel-inner
